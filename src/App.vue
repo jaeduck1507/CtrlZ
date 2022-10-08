@@ -36,7 +36,10 @@
         <v-icon>mdi-content-save</v-icon>
       </v-btn>
       
-      <v-btn icon>
+      <v-btn 
+      icon
+      @click="gogo = !gogo"
+      >
         <v-icon>mdi-dots-vertical</v-icon>
         
       </v-btn>
@@ -47,7 +50,7 @@
     
     <v-navigation-drawer 
      
-
+    
     v-model="drawer"  
     >
       <v-list-item>
@@ -121,10 +124,10 @@
         items: [
           { title: 'Login', icon: 'mdi-view-dashboard', to:'/login' },
           { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
-          { title: 'Information', icon:'mdi-information', to:'/info'}
+          { title: 'Drawing', icon:'mdi-draw', to:'/Draw'},
+          { title: 'About', icon: 'mdi-help-box' }
         ],
-        right: null,
+        
         
       }
     },
