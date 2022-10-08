@@ -23,7 +23,7 @@ const routes = [
         name: 'Draw',
         component: Draw
     },
-
+    
 ]
 
 const router = new VueRouter({
